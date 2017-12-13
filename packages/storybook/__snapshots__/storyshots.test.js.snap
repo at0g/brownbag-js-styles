@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Button basic example 1`] = `
+<button
+  onClick={[Function]}
+>
+  Click me!
+</button>
+`;
+
+exports[`Storyshots Button label and children 1`] = `
+<button
+  label="Label as children"
+  onClick={[Function]}
+>
+  children win!
+</button>
+`;
+
+exports[`Storyshots Button with label as children 1`] = `
+<button
+  onClick={[Function]}
+>
+  Label as children
+</button>
+`;

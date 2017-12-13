@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint 'src/**/*.js' '.storybook/**/*.js' --ignore-pattern 'dist/**/*.js'",
     "start": "npm run storybook",
-    "storybook": "start-storybook -p 9000"
+    "storybook": "start-storybook -p 9000",
+    "test": "BABEL_ENV=test jest"
   },
   "author": "Ben Daley <ben.daley@cogent.co>",
   "license": "ISC",
@@ -20,6 +21,16 @@
   },
   "devDependencies": {
     "@brownbag-js-styles/eslint-config-ben": "^1.0.0",
-    "eslint": "^4.13.1"
+    "@storybook/addon-storyshots": "^3.2.17",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-jest": "^21.2.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "eslint": "^4.13.1",
+    "jest": "^21.2.1",
+    "react-test-renderer": "^15.6.2"
   }
 }

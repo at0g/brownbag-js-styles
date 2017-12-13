@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "npm run clean && npm run build:babel",
-    "build:babel": "babel -d dist src --source-maps",
+    "build:babel": "BABEL_ENV=prod babel -d dist src --source-maps",
     "clean": "rimraf dist",
     "lint": "eslint '**/*.js' --ignore-pattern '!src/**/*.js' --ignore-pattern 'dist/**/*.js'",
     "prepare": "npm run build"

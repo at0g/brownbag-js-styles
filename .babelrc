@@ -5,7 +5,16 @@
     "stage-1"
   ],
   "env": {
+    "prod": {
+      "plugins": [
+        "transform-es2015-modules-commonjs",
+        "dynamic-import-node"
+      ]
+    },
     "test": {
+      "presets": [
+        "jest"
+      ],
       "plugins": [
         "transform-es2015-modules-commonjs",
         "dynamic-import-node"
