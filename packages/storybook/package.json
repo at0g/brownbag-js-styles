@@ -1,0 +1,25 @@
+{
+  "name": "@brownbag-js-styles/storybook",
+  "version": "1.0.0",
+  "description": "A storybook to disply components in isolation",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint 'src/**/*.js' '.storybook/**/*.js' --ignore-pattern 'dist/**/*.js'",
+    "start": "npm run storybook",
+    "storybook": "start-storybook -p 9000"
+  },
+  "author": "Ben Daley <ben.daley@cogent.co>",
+  "license": "ISC",
+  "dependencies": {
+    "@brownbag-js-styles/button": "^1.0.0",
+    "@storybook/addon-actions": "^3.2.11",
+    "@storybook/addon-knobs": "^3.2.10",
+    "@storybook/react": "^3.2.11",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2"
+  },
+  "devDependencies": {
+    "@brownbag-js-styles/eslint-config-ben": "^1.0.0",
+    "eslint": "^4.13.1"
+  }
+}

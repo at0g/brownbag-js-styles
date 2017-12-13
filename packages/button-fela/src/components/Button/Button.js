@@ -1,5 +1,5 @@
 import { createComponentWithProxy } from 'react-fela';
-import Button from '@brownbag-js-styles/button';
+import Button from '@brownbag-js-styles/app';
 
 const styles = ({ theme }) => {
     return ({

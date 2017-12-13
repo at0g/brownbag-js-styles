@@ -1,50 +1,38 @@
 {
   "name": "@brownbag-js-styles/button",
-  "version": "0.0.1-alpha",
+  "version": "1.0.0",
   "description": "",
-  "main": "dist/components/Button/index.js",
-  "author": "",
-  "license": "ISC",
-  "private": true,
+  "main": "dist/index.js",
   "scripts": {
     "build": "npm run clean && npm run build:babel",
-    "build:babel": "babel -d dist src",
+    "build:babel": "babel -d dist src --source-maps",
     "clean": "rimraf dist",
-    "prepare": "npm run build",
-    "start": "webpack-dev-server --open",
-    "storybook": "start-storybook -p 9000",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint '**/*.js' --ignore-pattern '!src/**/*.js' --ignore-pattern 'dist/**/*.js'",
+    "prepare": "npm run build"
   },
-  "dependencies": {
+  "author": "Ben Daley <ben.daley@cogent.co>",
+  "license": "ISC",
+  "peerDependencies": {
     "react": "^15.6.2",
     "react-dom": "^15.6.2"
   },
+  "dependencies": {
+    "recompose": "^0.26.0"
+  },
   "devDependencies": {
-    "@storybook/addon-actions": "^3.2.11",
-    "@storybook/addon-knobs": "^3.2.10",
-    "@storybook/react": "^3.2.11",
+    "@brownbag-js-styles/eslint-config-ben": "^1.0.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
-    "babel-eslint": "^8.0.1",
     "babel-loader": "^7.1.2",
     "babel-plugin-dynamic-import-node": "^1.1.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
-    "clean-webpack-plugin": "^0.1.17",
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb": "^15.1.0",
-    "eslint-import-resolver-webpack": "^0.8.3",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "5.1.1",
-    "eslint-plugin-react": "^7.4.0",
-    "html-webpack-plugin": "^2.30.1",
-    "html-webpack-template": "^5.6.0",
+    "eslint": "^4.13.1",
     "prop-types": "^15.6.0",
-    "react-hot-loader": "^3.0.0-beta.7",
-    "rimraf": "^2.6.2",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.8.2"
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "rimraf": "^2.6.2"
   }
 }
