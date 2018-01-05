@@ -7,8 +7,9 @@
   "license": "ISC",
   "private": true,
   "scripts": {
-    "build": "npm run clean && npm run build:babel",
+    "build": "npm run clean && npm run build:babel && npm run build:css",
     "build:babel": "BABEL_ENV=prod babel -d dist src --source-maps",
+    "build:css": "BABEL_ENV=prod babel-node ./scripts/postcss.js",
     "clean": "rimraf dist",
     "lint": "eslint '**/*.js' --ignore-pattern '!src/**/*.js' --ignore-pattern 'dist/**/*.js'",
     "prepare": "npm run build"
@@ -23,8 +24,14 @@
   },
   "devDependencies": {
     "@brownbag-js-styles/eslint-config-ben": "^1.0.0",
+    "@brownbag-js-styles/theme": "^1.0.0",
+    "autoprefixer": "^7.2.4",
     "babel-cli": "^6.26.0",
     "eslint": "^4.13.1",
+    "fs-extra": "^5.0.0",
+    "postcss": "^6.0.15",
+    "postcss-csso": "^3.0.0",
+    "postcss-map": "^0.9.0",
     "rimraf": "^2.6.2"
   }
 }

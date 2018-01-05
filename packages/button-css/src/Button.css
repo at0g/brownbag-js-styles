@@ -24,27 +24,27 @@
     font-size: 120%;
 }
 
-.button--default {
-    background-color: beige;
-    color: darkslategray;
-}
-
 .button--danger {
-    background-color: darkred;
-    color: whitesmoke;
+    background-color: map(theme, colors, color1, bg);
+    color: map(theme, colors, color1, fg);
 }
-
 .button--primary {
-    background-color: darkcyan;
-    color: blanchedalmond;
+    background-color: map(theme, colors, color2, bg);
+    color: map(theme, colors, color2, fg);
 }
-
 .button--secondary {
-    background-color: darkslategray;
-    color: blanchedalmond;
+    background-color: map(theme, colors, color3, bg);
+    color: map(theme, colors, color3, fg);
+}
+.button--warn {
+    background-color: map(theme, colors, color4, bg);
+    color: map(theme, colors, color4, fg);
+}
+.button--default {
+    background-color: map(theme, colors, color5, bg);
+    color: map(theme, colors, color5, fg);
 }
 
-.button--warn {
-    background-color: cornsilk;
-    color: coral;
-}
+
+
+
