@@ -2,7 +2,7 @@
   "name": "@brownbag-js-styles/button",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/Button.js",
   "scripts": {
     "build": "npm run clean && npm run build:babel",
     "build:babel": "BABEL_ENV=prod babel -d dist src --source-maps",
@@ -13,26 +13,16 @@
   "author": "Ben Daley <ben.daley@cogent.co>",
   "license": "ISC",
   "peerDependencies": {
-    "react": "^15.6.2",
-    "react-dom": "^15.6.2"
+    "react": "^15.6.2"
   },
   "dependencies": {
+    "prop-types": "^15.6.0",
     "recompose": "^0.26.0"
   },
   "devDependencies": {
     "@brownbag-js-styles/eslint-config-ben": "^1.0.0",
     "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-dynamic-import-node": "^1.1.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-1": "^6.24.1",
     "eslint": "^4.13.1",
-    "prop-types": "^15.6.0",
-    "react": "^15.6.2",
-    "react-dom": "^15.6.2",
     "rimraf": "^2.6.2"
   }
 }

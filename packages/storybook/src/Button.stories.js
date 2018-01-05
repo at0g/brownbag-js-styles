@@ -1,31 +1,30 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { object, text } from '@storybook/addon-knobs';
-import Button from '@brownbag-js-styles/button';
+import { boolean, object, select } from '@storybook/addon-knobs';
+import CSSButton from '@brownbag-js-styles/button-css';
+import FelaButton from '@brownbag-js-styles/button-fela';
 
 const createCommonProps = () => ({
     onClick: action('onClick'),
     ...object('...props', {}),
+    disabled: boolean('disabled', false),
+    size: select('size', ['small', 'medium', 'large'], 'medium'),
+    variant: select(
+        'variant',
+        ['default', 'danger', 'primary', 'secondary', 'warn'],
+        'default',
+    ),
 });
 
 export default storiesOf('Button', module)
-    .add('basic example', () => (
-        <Button {...createCommonProps()}>
-            {text('children', 'Click me!')}
-        </Button>
+    .add('CSS example', () => (
+        <CSSButton {...createCommonProps()}>
+            A CSS button (inspect className)
+        </CSSButton>
     ))
-    .add('with label as children', () => (
-        <Button
-            {...createCommonProps()}
-            label={text('label', 'Label as children')}
-        />
-    ))
-    .add('label and children', () => (
-        <Button
-            {...createCommonProps()}
-            label={text('label', 'Label as children')}
-        >
-            {text('children', 'children win!')}
-        </Button>
+    .add('Fela example', () => (
+        <FelaButton {...createCommonProps()}>
+            Fela button
+        </FelaButton>
     ));

@@ -1,0 +1,50 @@
+.button {
+    border: 1px solid black;
+    display: inline-block;
+    line-height: inherit;
+    padding: 0 0.6em;
+    cursor: pointer;
+}
+
+.button:disabled,
+.button--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.button--small {
+    font-size: 80%;
+}
+
+.button--medium {
+    font-size: 100%;
+}
+
+.button--large {
+    font-size: 120%;
+}
+
+.button--default {
+    background-color: beige;
+    color: darkslategray;
+}
+
+.button--danger {
+    background-color: darkred;
+    color: whitesmoke;
+}
+
+.button--primary {
+    background-color: darkcyan;
+    color: blanchedalmond;
+}
+
+.button--secondary {
+    background-color: darkslategray;
+    color: blanchedalmond;
+}
+
+.button--warn {
+    background-color: cornsilk;
+    color: coral;
+}

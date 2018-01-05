@@ -1,8 +1,8 @@
 {
-  "name": "@brownbag-js-styles/button-fela",
+  "name": "@brownbag-js-styles/button-css",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/FelaButton.js",
+  "main": "dist/CssButton.js",
   "author": "",
   "license": "ISC",
   "private": true,
@@ -14,15 +14,12 @@
     "prepare": "npm run build"
   },
   "peerDependencies": {
-    "fela": "^6.0.0",
-    "react": "^15.6.2",
-    "react-fela": "^6.0.0"
+    "react": "^15.6.2"
   },
   "dependencies": {
     "@brownbag-js-styles/button": "^1.0.0",
-    "@brownbag-js-styles/theme": "^1.0.0",
-    "prop-types": "^15.6.0",
-    "recompose": "^0.26.0"
+    "classnames": "^2.2.5",
+    "prop-types": "^15.6.0"
   },
   "devDependencies": {
     "@brownbag-js-styles/eslint-config-ben": "^1.0.0",

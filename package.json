@@ -4,7 +4,7 @@
   "description": "A monorepo comparing css approaches",
   "main": "index.js",
   "scripts": {
-    "bootstrap": "lerna bootstrap --hoist",
+    "bootstrap": "lerna bootstrap",
     "lerna": "lerna",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
