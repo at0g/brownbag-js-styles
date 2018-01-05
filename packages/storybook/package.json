@@ -14,6 +14,7 @@
   "dependencies": {
     "@brownbag-js-styles/button-css": "^1.0.0",
     "@brownbag-js-styles/button-fela": "^1.0.0",
+    "@brownbag-js-styles/button-glamorous": "^1.0.0",
     "@storybook/addon-actions": "^3.2.11",
     "@storybook/addon-knobs": "^3.2.10",
     "@storybook/react": "^3.2.11",

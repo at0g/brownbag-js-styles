@@ -4,6 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { boolean, object, select } from '@storybook/addon-knobs';
 import CSSButton from '@brownbag-js-styles/button-css';
 import FelaButton from '@brownbag-js-styles/button-fela';
+import GlamorousButton from '@brownbag-js-styles/button-glamorous';
 
 const createCommonProps = () => ({
     onClick: action('onClick'),
@@ -27,4 +28,9 @@ export default storiesOf('Button', module)
         <FelaButton {...createCommonProps()}>
             Fela button
         </FelaButton>
+    ))
+    .add('Glamorous example', () => (
+        <GlamorousButton {...createCommonProps()}>
+            Glamorous Button
+        </GlamorousButton>
     ));

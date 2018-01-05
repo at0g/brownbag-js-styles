@@ -1,0 +1,30 @@
+{
+  "name": "@brownbag-js-styles/button-glamorous",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/GlamorousButton.js",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "build": "npm run clean && npm run build:babel",
+    "build:babel": "BABEL_ENV=prod babel -d dist src --source-maps",
+    "clean": "rimraf dist",
+    "lint": "eslint '**/*.js' --ignore-pattern '!src/**/*.js' --ignore-pattern 'dist/**/*.js'",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "^15.6.2"
+  },
+  "dependencies": {
+    "@brownbag-js-styles/button": "^1.0.0",
+    "@brownbag-js-styles/theme": "^1.0.0",
+    "glamorous": "^4.11.2",
+    "prop-types": "^15.6.0"
+  },
+  "devDependencies": {
+    "@brownbag-js-styles/eslint-config-ben": "^1.0.0",
+    "babel-cli": "^6.26.0",
+    "eslint": "^4.13.1",
+    "rimraf": "^2.6.2"
+  }
+}
