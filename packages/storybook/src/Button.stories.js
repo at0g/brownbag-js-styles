@@ -19,18 +19,43 @@ const createCommonProps = () => ({
 });
 
 export default storiesOf('Button', module)
-    .add('CSS example', () => (
-        <CSSButton {...createCommonProps()}>
-            A CSS button (inspect className)
-        </CSSButton>
-    ))
-    .add('Fela example', () => (
-        <FelaButton {...createCommonProps()}>
-            Fela button
-        </FelaButton>
-    ))
-    .add('Glamorous example', () => (
-        <GlamorousButton {...createCommonProps()}>
-            Glamorous Button
-        </GlamorousButton>
-    ));
+    .addWithChapters('Styles', {
+        chapters: [
+            {
+                title: 'Vanilla CSS',
+                sections: [
+                    {
+                        sectionFn: () => (
+                            <CSSButton {...createCommonProps()}>
+                                A CSS button (inspect className)
+                            </CSSButton>
+                        ),
+                    },
+                ],
+            },
+            {
+                title: 'Fela',
+                sections: [
+                    {
+                        sectionFn: () => (
+                            <FelaButton {...createCommonProps()}>
+                                Fela button
+                            </FelaButton>
+                        ),
+                    },
+                ],
+            },
+            {
+                title: 'Glamorous',
+                sections: [
+                    {
+                        sectionFn: () => (
+                            <GlamorousButton {...createCommonProps()}>
+                                Glamorous Button
+                            </GlamorousButton>
+                        ),
+                    },
+                ],
+            },
+        ],
+    });

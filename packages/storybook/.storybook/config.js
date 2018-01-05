@@ -1,10 +1,21 @@
 /* eslint-disable import/no-extraneous-dependencies, import/no-unresolved, import/extensions */
-import { configure, addDecorator } from '@storybook/react';
+import { configure, addDecorator, setAddon } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
-import { cssDecorator, felaProvider, felaTheme, glamorousTheme }  from './decorators';
+import { felaProvider, felaTheme, glamorousTheme }  from './decorators';
+import chaptersAddon, { setDefaults } from 'react-storybook-addon-chapters';
+
+setDefaults({
+    sectionOptions: {
+        showSource: false,
+        allowSourceToggling: true,
+        showPropTables: false,
+        allowPropTablesToggling: true,
+    },
+});
+setAddon(chaptersAddon);
 
 addDecorator(withKnobs);
-addDecorator(cssDecorator);
+// addDecorator(cssDecorator);
 addDecorator(felaProvider);
 addDecorator(felaTheme);
 addDecorator(glamorousTheme);

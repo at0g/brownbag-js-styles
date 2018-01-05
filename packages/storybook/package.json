@@ -23,7 +23,8 @@
     "glamorous": "^4.11.2",
     "react": "^15.6.2",
     "react-dom": "^15.6.2",
-    "react-fela": "^6.0.0"
+    "react-fela": "^6.0.0",
+    "react-storybook-addon-chapters": "^2.1.1"
   },
   "devDependencies": {
     "@brownbag-js-styles/eslint-config-ben": "^1.0.0",
