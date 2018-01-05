@@ -47,7 +47,7 @@
 ### Cons
 - esoteric language and features
 - dated
-- encouranges bloated output
+- encourages bloated output
 - considerable toolchain overhead
 
 

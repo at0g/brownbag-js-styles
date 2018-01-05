@@ -1,26 +1,378 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Button basic example 1`] = `
-<button
-  onClick={[Function]}
+exports[`Storyshots Button Styles 1`] = `
+<div
+  style={
+    Object {
+      "WebkitFontSmoothing": "antialiased",
+      "color": "#444",
+      "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+    }
+  }
 >
-  Click me!
-</button>
-`;
-
-exports[`Storyshots Button label and children 1`] = `
-<button
-  label="Label as children"
-  onClick={[Function]}
->
-  children win!
-</button>
-`;
-
-exports[`Storyshots Button with label as children 1`] = `
-<button
-  onClick={[Function]}
->
-  Label as children
-</button>
+  <div
+    style={
+      Object {
+        "marginBottom": 60,
+      }
+    }
+  >
+    <div>
+      <h1
+        style={
+          Object {
+            "color": "#363a45",
+            "fontSize": 36,
+            "marginBottom": 10,
+          }
+        }
+      >
+        Styles
+      </h1>
+      
+      
+    </div>
+  </div>
+  <div>
+    <div
+      style={
+        Object {
+          "marginBottom": 60,
+        }
+      }
+    >
+      <div>
+        <h3
+          style={
+            Object {
+              "color": "#363a45",
+              "fontSize": 24,
+              "marginBottom": 10,
+            }
+          }
+        >
+          Vanilla CSS
+        </h3>
+        
+        
+        
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "marginBottom": 100,
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "marginBottom": 60,
+          }
+        }
+      >
+        <div>
+          <div>
+            
+            
+          </div>
+        </div>
+      </div>
+      <div
+        style={
+          Object {
+            "marginBottom": 60,
+          }
+        }
+      >
+        <button
+          className="button button--medium button--default"
+          disabled={false}
+          onClick={[Function]}
+        >
+          A CSS button (inspect className)
+        </button>
+      </div>
+      <div>
+        <div>
+          <div>
+            
+            <div
+              style={
+                Object {
+                  "height": 15,
+                }
+              }
+            >
+              <button
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "transparent",
+                    "border": "1px solid #ccd6dd",
+                    "borderRadius": 3,
+                    "color": "#898d97",
+                    "cursor": "pointer",
+                    "float": "right",
+                    "marginLeft": 5,
+                    "padding": "5px 10px",
+                  }
+                }
+              >
+                Show
+                 Props Table
+              </button>
+              <button
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "transparent",
+                    "border": "1px solid #ccd6dd",
+                    "borderRadius": 3,
+                    "color": "#898d97",
+                    "cursor": "pointer",
+                    "float": "right",
+                    "marginLeft": 5,
+                    "padding": "5px 10px",
+                  }
+                }
+              >
+                Show
+                 Source
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      style={
+        Object {
+          "marginBottom": 60,
+        }
+      }
+    >
+      <div>
+        <h3
+          style={
+            Object {
+              "color": "#363a45",
+              "fontSize": 24,
+              "marginBottom": 10,
+            }
+          }
+        >
+          Fela
+        </h3>
+        
+        
+        
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "marginBottom": 100,
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "marginBottom": 60,
+          }
+        }
+      >
+        <div>
+          <div>
+            
+            
+          </div>
+        </div>
+      </div>
+      <div
+        style={
+          Object {
+            "marginBottom": 60,
+          }
+        }
+      >
+        <button
+          className="a b c d e f g h i"
+          onClick={[Function]}
+        >
+          Fela button
+        </button>
+      </div>
+      <div>
+        <div>
+          <div>
+            
+            <div
+              style={
+                Object {
+                  "height": 15,
+                }
+              }
+            >
+              <button
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "transparent",
+                    "border": "1px solid #ccd6dd",
+                    "borderRadius": 3,
+                    "color": "#898d97",
+                    "cursor": "pointer",
+                    "float": "right",
+                    "marginLeft": 5,
+                    "padding": "5px 10px",
+                  }
+                }
+              >
+                Show
+                 Props Table
+              </button>
+              <button
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "transparent",
+                    "border": "1px solid #ccd6dd",
+                    "borderRadius": 3,
+                    "color": "#898d97",
+                    "cursor": "pointer",
+                    "float": "right",
+                    "marginLeft": 5,
+                    "padding": "5px 10px",
+                  }
+                }
+              >
+                Show
+                 Source
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      style={
+        Object {
+          "marginBottom": 60,
+        }
+      }
+    >
+      <div>
+        <h3
+          style={
+            Object {
+              "color": "#363a45",
+              "fontSize": 24,
+              "marginBottom": 10,
+            }
+          }
+        >
+          Glamorous
+        </h3>
+        
+        
+        
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "marginBottom": 100,
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "marginBottom": 60,
+          }
+        }
+      >
+        <div>
+          <div>
+            
+            
+          </div>
+        </div>
+      </div>
+      <div
+        style={
+          Object {
+            "marginBottom": 60,
+          }
+        }
+      >
+        <button
+          className="css-rwnf0l"
+          disabled={false}
+          onClick={[Function]}
+        >
+          Glamorous Button
+        </button>
+      </div>
+      <div>
+        <div>
+          <div>
+            
+            <div
+              style={
+                Object {
+                  "height": 15,
+                }
+              }
+            >
+              <button
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "transparent",
+                    "border": "1px solid #ccd6dd",
+                    "borderRadius": 3,
+                    "color": "#898d97",
+                    "cursor": "pointer",
+                    "float": "right",
+                    "marginLeft": 5,
+                    "padding": "5px 10px",
+                  }
+                }
+              >
+                Show
+                 Props Table
+              </button>
+              <button
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "transparent",
+                    "border": "1px solid #ccd6dd",
+                    "borderRadius": 3,
+                    "color": "#898d97",
+                    "cursor": "pointer",
+                    "float": "right",
+                    "marginLeft": 5,
+                    "padding": "5px 10px",
+                  }
+                }
+              >
+                Show
+                 Source
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 `;
