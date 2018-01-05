@@ -13,15 +13,11 @@
     "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "peerDependencies": {
-    "fela": "^6.0.0",
-    "react": "^15.6.2",
-    "react-fela": "^6.0.0"
-  },
   "dependencies": {
     "color-pairs-picker": "^1.3.6"
   },
   "devDependencies": {
+    "@brownbag-js-styles/eslint-config-ben": "^1.0.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-plugin-dynamic-import-node": "^1.1.0",

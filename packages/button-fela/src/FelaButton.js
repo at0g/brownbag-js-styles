@@ -25,36 +25,31 @@ const ButtonStyles = props => ({
                 return '100%';
         }
     })(props.size),
-    ...(((variant) => {
+    ...(((variant, colors) => {
+        let colorPair;
         switch (variant) {
             case 'danger':
-                return {
-                    backgroundColor: 'darkred',
-                    color: 'whitesmoke',
-                };
+                colorPair = colors.color1;
+                break;
             case 'primary':
-                return {
-                    backgroundColor: 'darkcyan',
-                    color: 'blanchedalmond',
-                };
+                colorPair = colors.color2;
+                break;
             case 'secondary':
-                return {
-                    backgroundColor: 'darkslategray',
-                    color: 'blanchedalmond',
-                };
+                colorPair = colors.color3;
+                break;
             case 'warn':
-                return {
-                    backgroundColor: 'cornsilk',
-                    color: 'coral',
-                };
+                colorPair = colors.color4;
+                break;
             case 'default':
             default:
-                return {
-                    backgroundColor: 'beige',
-                    color: 'darkslategray',
-                };
+                colorPair = colors.color5;
         }
-    })(props.variant)),
+
+        return {
+            color: colorPair.fg,
+            backgroundColor: colorPair.bg,
+        };
+    })(props.variant, props.theme.colors)),
 });
 
 export default compose(

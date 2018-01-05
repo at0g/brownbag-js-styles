@@ -15,10 +15,12 @@
     "@brownbag-js-styles/button-css": "^1.0.0",
     "@brownbag-js-styles/button-fela": "^1.0.0",
     "@brownbag-js-styles/button-glamorous": "^1.0.0",
+    "@brownbag-js-styles/theme": "^1.0.0",
     "@storybook/addon-actions": "^3.2.11",
     "@storybook/addon-knobs": "^3.2.10",
     "@storybook/react": "^3.2.11",
     "fela": "^6.0.0",
+    "glamorous": "^4.11.2",
     "react": "^15.6.2",
     "react-dom": "^15.6.2",
     "react-fela": "^6.0.0"
